@@ -1,0 +1,287 @@
+{
+	"info": {
+		"_postman_id": "c2d1f0a0-603a-4dad-94ba-f0a32e83cc89",
+		"name": "Cloud_Project_User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35321605"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Aom Kapadia\",\r\n  \"username\": \"aom12456\",\r\n  \"email\": \"kapadiaaom78@gmail.com\",\r\n  \"password\": \"your_password\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"kapadiaaom78@gmail.com\",\r\n  \"password\": \"your_password\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "otp_verify",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"otpId\": \"69194b8ec7e530997bc7b8b6\",\r\n  \"code\": \"979466\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/verify-otp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"verify-otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vmcreation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "super-secret",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OTE4YWY0ODhmYjA1MmUwYjYzNWZiMTgiLCJyb2xlIjoidXNlciIsInVzZXJuYW1lIjoiYWxpY2UiLCJpYXQiOjE3NjMyMjg2MjMsImV4cCI6MTc2MzI1NzQyM30.RJblTavZcobpdm9RIWG1PWQCeB3C9FOmwEoauHmTKYg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cpu\": 2,\r\n  \"memory\": \"4GB\",\r\n  \"storage\": \"40GB\",\r\n  \"os\": \"ubuntu:22.04\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/vms/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vms",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "my_vms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/vms/my",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"vms",
+						"my"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "execute_in_vm",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"clientId\": \"1763229038352-858\",\r\n  \"vmId\": \"afc157b14a10f4484b949363c68d719e1d0bf32658d5da409794d541abf0b865\",\r\n  \"command\": \"ls -la\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/vms/exec",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"vms",
+						"exec"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vm_start",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"clientId\": \"1763229038352-858\",\r\n  \"vmId\": \"afc157b14a10f4484b949363c68d719e1d0bf32658d5da409794d541abf0b865\",\r\n  \"command\": \"ls -la\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/vms/start/e89858c9fb1c7af9ee0c6558062d1762a6474308ecf46d1f5220bdb2317cb3a2",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"vms",
+						"start",
+						"e89858c9fb1c7af9ee0c6558062d1762a6474308ecf46d1f5220bdb2317cb3a2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vm_stop",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/vms/stop/03aae29688c332410630ec42c10d4251b5a6670a369e622c8fec7bd8ffa180bd",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"vms",
+						"stop",
+						"03aae29688c332410630ec42c10d4251b5a6670a369e622c8fec7bd8ffa180bd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vm_details_running_or_not",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/vms/0036c1dcb9e91674f6d9a552b2b68596dac9ff857548bf3b308f39bec9fc6551",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"vms",
+						"0036c1dcb9e91674f6d9a552b2b68596dac9ff857548bf3b308f39bec9fc6551"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MThmNDlkYzIyMDg0YzA2NGFkODBiZCIsImVtYWlsIjoia2FwYWRpYWFvbTc4QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzYzMjY1NDU5LCJleHAiOjE3NjMzMDg2NTl9.Vn8TwCP2Z6Gy5nOweR92DftjIEyNH3wQjXOAd444MAo",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8080"
+		}
+	]
+}
