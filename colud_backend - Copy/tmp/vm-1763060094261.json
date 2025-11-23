@@ -1,0 +1,7 @@
+{
+  "cpu": 2,
+  "memory": "4GB",
+  "storage": "40GB",
+  "os": "ubuntu:24.04.3",
+  "timestamp": 1763060094261
+}
