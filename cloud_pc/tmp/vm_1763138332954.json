@@ -1,0 +1,10 @@
+{
+  "id": "5dae7332f2bf496d2505b56c08c0a8492366899ddb34e655c4c1558f5428fe1c",
+  "name": "vm_1763138332954",
+  "ip": "172.17.0.4",
+  "image": "ubuntu:22.04",
+  "cpu": 2,
+  "memory": "4GB",
+  "createdAt": "2025-11-14T16:38:55.654Z",
+  "status": "running"
+}

@@ -1,0 +1,222 @@
+{
+  "spec": {
+    "cpu": 2,
+    "memory": "4GB",
+    "storage": "40GB",
+    "os": "ubuntu:22.04",
+    "timestamp": 1763060482648
+  },
+  "info": {
+    "Id": "3bfed5e278ddbfd7d52446493b480c9ad3fe72bd75bd96558c2b4e07d0c25dca",
+    "Created": "2025-11-13T19:01:26.678032918Z",
+    "Path": "/bin/bash",
+    "Args": [],
+    "State": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 916,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2025-11-13T19:01:27.184624744Z",
+      "FinishedAt": "0001-01-01T00:00:00Z"
+    },
+    "Image": "sha256:09506232a8004baa32c47d68f1e5c307d648fdd59f5e7eaa42aaf87914100db3",
+    "ResolvConfPath": "/var/lib/docker/containers/3bfed5e278ddbfd7d52446493b480c9ad3fe72bd75bd96558c2b4e07d0c25dca/resolv.conf",
+    "HostnamePath": "/var/lib/docker/containers/3bfed5e278ddbfd7d52446493b480c9ad3fe72bd75bd96558c2b4e07d0c25dca/hostname",
+    "HostsPath": "/var/lib/docker/containers/3bfed5e278ddbfd7d52446493b480c9ad3fe72bd75bd96558c2b4e07d0c25dca/hosts",
+    "LogPath": "/var/lib/docker/containers/3bfed5e278ddbfd7d52446493b480c9ad3fe72bd75bd96558c2b4e07d0c25dca/3bfed5e278ddbfd7d52446493b480c9ad3fe72bd75bd96558c2b4e07d0c25dca-json.log",
+    "Name": "/vm_1763060482657",
+    "RestartCount": 0,
+    "Driver": "overlayfs",
+    "Platform": "linux",
+    "MountLabel": "",
+    "ProcessLabel": "",
+    "AppArmorProfile": "",
+    "ExecIDs": null,
+    "HostConfig": {
+      "Binds": null,
+      "ContainerIDFile": "",
+      "LogConfig": {
+        "Type": "json-file",
+        "Config": {}
+      },
+      "NetworkMode": "bridge",
+      "PortBindings": {},
+      "RestartPolicy": {
+        "Name": "no",
+        "MaximumRetryCount": 0
+      },
+      "AutoRemove": false,
+      "VolumeDriver": "",
+      "VolumesFrom": null,
+      "ConsoleSize": [
+        0,
+        0
+      ],
+      "CapAdd": null,
+      "CapDrop": null,
+      "CgroupnsMode": "host",
+      "Dns": null,
+      "DnsOptions": null,
+      "DnsSearch": null,
+      "ExtraHosts": null,
+      "GroupAdd": null,
+      "IpcMode": "private",
+      "Cgroup": "",
+      "Links": null,
+      "OomScoreAdj": 0,
+      "PidMode": "",
+      "Privileged": false,
+      "PublishAllPorts": false,
+      "ReadonlyRootfs": false,
+      "SecurityOpt": null,
+      "UTSMode": "",
+      "UsernsMode": "",
+      "ShmSize": 67108864,
+      "Runtime": "runc",
+      "Isolation": "",
+      "CpuShares": 0,
+      "Memory": 4294967296,
+      "NanoCpus": 2000000000,
+      "CgroupParent": "",
+      "BlkioWeight": 0,
+      "BlkioWeightDevice": null,
+      "BlkioDeviceReadBps": null,
+      "BlkioDeviceWriteBps": null,
+      "BlkioDeviceReadIOps": null,
+      "BlkioDeviceWriteIOps": null,
+      "CpuPeriod": 0,
+      "CpuQuota": 0,
+      "CpuRealtimePeriod": 0,
+      "CpuRealtimeRuntime": 0,
+      "CpusetCpus": "",
+      "CpusetMems": "",
+      "Devices": null,
+      "DeviceCgroupRules": null,
+      "DeviceRequests": null,
+      "MemoryReservation": 0,
+      "MemorySwap": 8589934592,
+      "MemorySwappiness": null,
+      "OomKillDisable": false,
+      "PidsLimit": null,
+      "Ulimits": null,
+      "CpuCount": 0,
+      "CpuPercent": 0,
+      "IOMaximumIOps": 0,
+      "IOMaximumBandwidth": 0,
+      "MaskedPaths": [
+        "/proc/asound",
+        "/proc/acpi",
+        "/proc/interrupts",
+        "/proc/kcore",
+        "/proc/keys",
+        "/proc/latency_stats",
+        "/proc/timer_list",
+        "/proc/timer_stats",
+        "/proc/sched_debug",
+        "/proc/scsi",
+        "/sys/firmware",
+        "/sys/devices/virtual/powercap"
+      ],
+      "ReadonlyPaths": [
+        "/proc/bus",
+        "/proc/fs",
+        "/proc/irq",
+        "/proc/sys",
+        "/proc/sysrq-trigger"
+      ]
+    },
+    "GraphDriver": {
+      "Data": null,
+      "Name": "overlayfs"
+    },
+    "Mounts": [],
+    "Config": {
+      "Hostname": "3bfed5e278dd",
+      "Domainname": "",
+      "User": "",
+      "AttachStdin": false,
+      "AttachStdout": false,
+      "AttachStderr": false,
+      "Tty": true,
+      "OpenStdin": false,
+      "StdinOnce": false,
+      "Env": [
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      ],
+      "Cmd": [
+        "/bin/bash"
+      ],
+      "Image": "ubuntu:22.04",
+      "Volumes": null,
+      "WorkingDir": "",
+      "Entrypoint": null,
+      "OnBuild": null,
+      "Labels": {
+        "org.opencontainers.image.ref.name": "ubuntu",
+        "org.opencontainers.image.version": "22.04"
+      },
+      "StopTimeout": 1
+    },
+    "NetworkSettings": {
+      "Bridge": "",
+      "SandboxID": "9ea5e9c7658a9f8d80c99ac870419e0b215d101235866538603d9570f6e950a6",
+      "SandboxKey": "/var/run/docker/netns/9ea5e9c7658a",
+      "Ports": {},
+      "HairpinMode": false,
+      "LinkLocalIPv6Address": "",
+      "LinkLocalIPv6PrefixLen": 0,
+      "SecondaryIPAddresses": null,
+      "SecondaryIPv6Addresses": null,
+      "EndpointID": "04b89abbd269b1906a0816e4acb0ed161cb03b31b59660f66134380d17f1f1ea",
+      "Gateway": "172.17.0.1",
+      "GlobalIPv6Address": "",
+      "GlobalIPv6PrefixLen": 0,
+      "IPAddress": "172.17.0.3",
+      "IPPrefixLen": 16,
+      "IPv6Gateway": "",
+      "MacAddress": "2e:37:ce:0f:31:a7",
+      "Networks": {
+        "bridge": {
+          "IPAMConfig": null,
+          "Links": null,
+          "Aliases": null,
+          "MacAddress": "2e:37:ce:0f:31:a7",
+          "DriverOpts": null,
+          "GwPriority": 0,
+          "NetworkID": "3740a57da5a2df120207427763bef425e00fb9cef72ad8fcf06d46b0ca7829ad",
+          "EndpointID": "04b89abbd269b1906a0816e4acb0ed161cb03b31b59660f66134380d17f1f1ea",
+          "Gateway": "172.17.0.1",
+          "IPAddress": "172.17.0.3",
+          "IPPrefixLen": 16,
+          "IPv6Gateway": "",
+          "GlobalIPv6Address": "",
+          "GlobalIPv6PrefixLen": 0,
+          "DNSNames": null
+        }
+      }
+    },
+    "ImageManifestDescriptor": {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:4cb780d50443fc4463f1f9360c03ca46512e4fdd8fd97c5ce7e69c8758924575",
+      "size": 424,
+      "annotations": {
+        "com.docker.official-images.bashbrew.arch": "amd64",
+        "org.opencontainers.image.base.name": "scratch",
+        "org.opencontainers.image.created": "2025-10-01T00:00:00Z",
+        "org.opencontainers.image.revision": "1758709c0ef8b678abab7ba1c66546f8c1e8229f",
+        "org.opencontainers.image.source": "https://git.launchpad.net/cloud-images/+oci/ubuntu-base",
+        "org.opencontainers.image.url": "https://hub.docker.com/_/ubuntu",
+        "org.opencontainers.image.version": "22.04"
+      },
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      }
+    }
+  }
+}
